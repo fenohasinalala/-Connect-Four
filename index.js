@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const square3 = squares[winningArrays[y][2]]
           const square4 = squares[winningArrays[y][3]]
     
-          //check those squares to see if they all have the class of player_one
+          //Vérifier si les cases alignées comportent tous la classe du player_one
           if (
             square1.classList.contains('player_one') &&
             square2.classList.contains('player_one') &&
@@ -93,8 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
           )
           {
             result.innerHTML = 'Victoire du Joueur 1!'
+            alert('Victoire du Joueur 1')
           }
-          //check those squares to see if they all have the class of player_two
+          //Vérifier si les cases alignées comportent tous la classe du player_two
           if (
             square1.classList.contains('player_two') &&
             square2.classList.contains('player_two') &&
@@ -103,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
           )
           {
             result.innerHTML = 'Victoire du Joueur 2!'
+            alert('Victoire du Joueur 2!')
           }
         }
       }
