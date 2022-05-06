@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayCurrentPlayer = document.querySelector('#joueur_actuel')
     let joueur_actuel = 1
 
-
+    //Tous les cas possibles pour 04 cases alignées
     const winningArrays = [
         [0, 1, 2, 3],
         [41, 40, 39, 38],
@@ -125,10 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     squares[i].classList.add('player_two')
                     joueur_actuel = 1
                     displayCurrentPlayer.innerHTML = joueur_actuel
-
                 }
                 
-            }else alert('Case non accessible')
+            }
+            else alert('Case non accessible')
             checkBoard()
         
         }
