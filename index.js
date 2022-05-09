@@ -92,8 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
             square4.classList.contains('player_one')
           )
           {
-            result.innerHTML = 'Victoire du Joueur 1!'
-            alert('Victoire du Joueur 1')
+            result.innerHTML = ` 
+            <button onclick="history.go(0)">Recommencer</button>              
+            <h3>Victoire du Joueur 1!</h3>   
+          `   
           }
           //Vérifier si les cases alignées comportent tous la classe du player_two
           if (
@@ -103,8 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
             square4.classList.contains('player_two')
           )
           {
-            result.innerHTML = 'Victoire du Joueur 2!'
-            alert('Victoire du Joueur 2!')
+            result.innerHTML = `  
+            <button onclick="history.go(0)">Recommencer</button> 
+            <h3>Victoire du Joueur 2!</h3>  
+             
+          `   
           }
         }
       }
@@ -128,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 
             }
-            else alert('Case non accessible')
+            // else alert('Case non accessible') 
             checkBoard()
         
         }
